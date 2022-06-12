@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Powernerd x Call Me Sleeper - Doomed [Copyright Free] (1).mp3-32f45fe9265798aa8a4406e5326ccbb8.mp3str"
+
+[deps]
+
+source_file="res://Powernerd x Call Me Sleeper - Doomed [Copyright Free] (1).mp3"
+dest_files=[ "res://.import/Powernerd x Call Me Sleeper - Doomed [Copyright Free] (1).mp3-32f45fe9265798aa8a4406e5326ccbb8.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

@@ -1,0 +1,97 @@
+[gd_scene load_steps=11 format=2]
+
+[ext_resource path="res://Floor.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Player.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Player.gd" type="Script" id=3]
+[ext_resource path="res://Enemy.tscn" type="PackedScene" id=4]
+[ext_resource path="res://SceneRoot.gd" type="Script" id=5]
+[ext_resource path="res://Lotus.tscn" type="PackedScene" id=6]
+[ext_resource path="res://Wall.tscn" type="PackedScene" id=7]
+[ext_resource path="res://assets/gunshot.wav" type="AudioStream" id=8]
+[ext_resource path="res://HUD.tscn" type="PackedScene" id=9]
+[ext_resource path="res://AudioStreamPlayer.tscn" type="PackedScene" id=10]
+
+[node name="SceneRoot" type="Spatial"]
+script = ExtResource( 5 )
+
+[node name="Player" parent="." instance=ExtResource( 2 )]
+transform = Transform( -1, 0, 0.000750542, 0, 1, 0, -0.000750542, 0, -1, 0, 0, -5.16551 )
+script = ExtResource( 3 )
+
+[node name="Floor" parent="." instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.21654, -0.340613, 1.3103 )
+
+[node name="Gunshot" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 8 )
+
+[node name="HUD" parent="." instance=ExtResource( 9 )]
+
+[node name="Lotus" parent="." instance=ExtResource( 6 )]
+transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 41.923, 0, 0 )
+
+[node name="Lotus6" parent="." instance=ExtResource( 6 )]
+transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -1.94749, 0, -27.3027 )
+
+[node name="Lotus7" parent="." instance=ExtResource( 6 )]
+transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -71.6344, 4.41608, -80.8737 )
+
+[node name="Lotus4" parent="." instance=ExtResource( 6 )]
+transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 20.9155, 0, -78.5874 )
+
+[node name="Lotus5" parent="." instance=ExtResource( 6 )]
+transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 22.109, -1.16907, 67.6766 )
+
+[node name="Lotus2" parent="." instance=ExtResource( 6 )]
+transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -68.3984, 0, 0 )
+
+[node name="Lotus3" parent="." instance=ExtResource( 6 )]
+transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -36.37, 2.62693, -66.7705 )
+
+[node name="Enemy" parent="." instance=ExtResource( 4 )]
+
+[node name="Enemy2" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 8.96103, 0, 15.9804 )
+
+[node name="Enemy3" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 9.81603, 9.53674e-07, -21.8645 )
+
+[node name="Enemy4" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -29.8984, 9.53674e-07, -54.5432 )
+
+[node name="Enemy5" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -37.5615, 9.53674e-07, 18.4088 )
+
+[node name="Enemy6" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -37.5615, 9.53674e-07, 57.2389 )
+
+[node name="Enemy7" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 47.5387, 9.53674e-07, 57.2389 )
+
+[node name="Enemy8" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 47.5387, 9.53674e-07, -67.5408 )
+
+[node name="Enemy9" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 63.9653, 9.53674e-07, -32.2218 )
+
+[node name="Enemy10" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 29.5747, 9.53674e-07, 78.9017 )
+
+[node name="Enemy11" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -77.0666, 9.53674e-07, 30.1009 )
+
+[node name="Enemy12" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -62.8576, 9.53674e-07, -62.7937 )
+
+[node name="Wall" parent="." instance=ExtResource( 7 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.6734, -98.6648 )
+
+[node name="Wall2" parent="." instance=ExtResource( 7 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.6734, 100.915 )
+
+[node name="Wall3" parent="." instance=ExtResource( 7 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -99.7168, 2.6734, 1.32756 )
+
+[node name="Wall4" parent="." instance=ExtResource( 7 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 99.2751, 2.6734, 1.32756 )
+
+[node name="AudioStreamPlayer" parent="." instance=ExtResource( 10 )]
